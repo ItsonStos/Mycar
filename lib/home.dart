@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mycar/telas/controle.dart';
 import 'package:mycar/telas/mais.dart';
 import 'package:mycar/telas/relatorio.dart';
+import 'package:mycar/dadosEntrada/abastecimento';
 
 class Home extends StatefulWidget {
   @override
@@ -11,6 +12,8 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
 
   int _indiceAtual = 1;
+
+  List<DadosEntrada> abastecimento; //Se ele fosse um Map?
 
   @override
   Widget build(BuildContext context) {
